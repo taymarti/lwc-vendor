@@ -73,6 +73,4 @@ To refresh: `npm pack --pack-destination <lwc-vendor>/acme` in each source folde
 ## License
 
 The scripts and documentation here: Apache-2.0 (`LICENSE`). The packages keep their own licenses (see
-`NOTICE`). Apps using Lightweight Charts must show its attribution notice and a link to
-https://www.tradingview.com/ to their users (see the
-[dh-charts README](https://github.com/taymarti/dh-charts#license)).
+`NOTICE`).
