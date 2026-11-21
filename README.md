@@ -50,13 +50,13 @@ registry, so the cache prime doesn't apply: install them by path. `acme/INTEGRIT
 
 | Tarball | What it is | Built from |
 |---|---|---|
-| `acme-chart-ext-0.2.0.tgz` | `@acme/chart-ext`: our Lightweight Charts plugins (price lines, drawings with context menu, shortcuts and undo, OHLC legend, shading, crosshair and time sync groups, live table rows), the hook for Deephaven charts, and the annotation store. One ES module for bundlers, with types | [dh-charts](https://github.com/taymarti/dh-charts) `ext/` (`npm pack`, which builds `dist/`) |
-| `acme-chart-react-0.2.0.tgz` | `@acme/chart-react`: React components for trading charts: `ChartToolbar` (symbol search, interval, chart type, indicators dialog, range, scale, layouts and sync, watchlist toggle), `ChartLegend` (study rows and settings), `Watchlist`. Peer dependencies: react 18 or 19, lightweight-charts 5 (types) | [dh-charts](https://github.com/taymarti/dh-charts) `react/` (`npm pack`) |
+| `acme-chart-ext-0.3.0.tgz` | `@acme/chart-ext`: our Lightweight Charts plugins (price lines, drawings with context menu, shortcuts and undo, OHLC legend, shading, crosshair and time sync groups, live table rows, chart navigation with history on demand, alerts (store, lines, toasts), session shading and market status, bar-close countdown), the hook for Deephaven charts, and the annotation store. One ES module for bundlers, with types | [dh-charts](https://github.com/taymarti/dh-charts) `ext/` (`npm pack`, which builds `dist/`) |
+| `acme-chart-react-0.3.0.tgz` | `@acme/chart-react`: React components for trading charts: `ChartToolbar` (symbol search, interval, chart type, indicators dialog, range, scale, layouts and sync, watchlist toggle), `ChartLegend` (study rows and settings, market status), `Watchlist`, `AlertsPanel`. Peer dependencies: react 18 or 19, lightweight-charts 5 (types) | [dh-charts](https://github.com/taymarti/dh-charts) `react/` (`npm pack`) |
 | `deephaven-js-plugin-tradingview-lightweight-0.1.0-acme.1.tgz` | Deephaven's TradingView plugin JS with our two changes (chart-events API, time-zone cache) | [our fork](https://github.com/taymarti/deephaven-plugins/tree/acme/tradingview-lightweight), commit `e0cdfdd`, `plugins/tradingview-lightweight/src/js` |
 
 ```powershell
 .\prime-cache.ps1                                            # their Lightweight Charts dependencies
-npm install <path to lwc-vendor>/acme/acme-chart-ext-0.2.0.tgz lightweight-charts@5.2.0
+npm install <path to lwc-vendor>/acme/acme-chart-ext-0.3.0.tgz lightweight-charts@5.2.0
 ```
 
 npm records the dependency as `file:<path>`, so keep `lwc-vendor` at the same relative place for
