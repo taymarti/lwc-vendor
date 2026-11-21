@@ -6,5 +6,6 @@
     "@tradingview/lwc-plugin-user-price-lines": "1.0.0",
     "fancy-canvas": "2.1.0",
     "lightweight-charts": "5.2.0"
-  }
+  },
+  "license": "Apache-2.0"
 }

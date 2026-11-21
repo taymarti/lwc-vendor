@@ -1,0 +1,21 @@
+lwc-vendor
+Copyright 2026 The lwc-vendor authors
+
+The scripts and documentation in this repository are licensed under the Apache License, Version 2.0
+(see LICENSE). The packages in packages/ and node_modules/ keep their own licenses (Apache-2.0 for
+lightweight-charts and the user price lines plugin, MIT for fancy-canvas); acme/ holds our packages,
+Apache-2.0 (dh-charts) and the fork of Deephaven's plugin (Apache-2.0).
+
+This product includes TradingView Lightweight Charts™ (Apache-2.0), whose attribution notice is:
+
+    TradingView Lightweight Charts™
+    Copyright (с) 2025 TradingView, Inc. https://www.tradingview.com/
+
+and TradingView's Lightweight Charts user price lines plugin (Apache-2.0):
+
+    TradingView Lightweight Charts™ — User price lines plugin
+    Copyright (c) 2026 TradingView, Inc. https://www.tradingview.com/
+
+The Lightweight Charts license requires applications that use it to show the attribution notice above
+and a link to https://www.tradingview.com/ on a page their users can see (the chart option
+`attributionLogo` satisfies the link requirement).
