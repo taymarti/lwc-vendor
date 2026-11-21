@@ -1,0 +1,10 @@
+{
+  "name": "lwc-vendor",
+  "private": true,
+  "description": "The Lightweight Charts packages, as published to npm: tarballs in packages/, installed tree in node_modules/",
+  "dependencies": {
+    "@tradingview/lwc-plugin-user-price-lines": "1.0.0",
+    "fancy-canvas": "2.1.0",
+    "lightweight-charts": "5.2.0"
+  }
+}
