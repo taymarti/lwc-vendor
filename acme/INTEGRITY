@@ -1,3 +1,4 @@
-sha512-4OjZhBgrOtK1v8eV9hBqaGEBJtGEeKidLHgRblVRM9ttRmTnI4RLVnCL5bi/UK8ZFm3aweCYplCC+cH578TPxw==  acme/acme-chart-ext-0.3.0.tgz
-sha512-NS9UkqpbfuuDdglDXJXIvGqv3ssSRUSAVGgv+epp72D40+4qWID3t+7XdHH33wRdLs0Sm+TPsgZvfyCMGdgvZw==  acme/acme-chart-react-0.3.0.tgz
+sha512-u23o9E++tHGgT1+kMmuuIm7b2iuzraLs98bvEjP93Cu5Q3sTeih10B3QN+pznsYrT/0y/PMIIlEOluXc22ua3g==  acme/acme-chart-ext-0.4.0.tgz
+sha512-YF156f75WqiCPLqrNjr8zjADNc0Pc8lHmmNrlciSBTP551zmjusqYNhvq9+1LBvF59twNBsbqn5Fl9et0mAZwA==  acme/acme-chart-react-0.4.0.tgz
+sha512-uryX3eaXRnij8JLDaipmZCsyIiufpcAW155X/YhZaopDoX37XYMkVITQ916Lat2dE478bSUpUilzr5c0r7Eydw==  acme/acme-dh-bindings-0.1.0.tgz
 sha512-KAC2cvMh+VQ6R0Y2fUg650FoTIOnJXF2BaZbE5FDzXyUJg8cKbEpUoO8UdU9u2u5OKHf4bR39wHBIG+W2WE91Q==  acme/deephaven-js-plugin-tradingview-lightweight-0.1.0-acme.1.tgz

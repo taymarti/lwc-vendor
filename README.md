@@ -50,26 +50,27 @@ registry, so the cache prime doesn't apply: install them by path. `acme/INTEGRIT
 
 | Tarball | What it is | Built from |
 |---|---|---|
-| `acme-chart-ext-0.3.0.tgz` | `@acme/chart-ext`: our Lightweight Charts plugins (price lines, drawings with context menu, shortcuts and undo, OHLC legend, shading, crosshair and time sync groups, live table rows, chart navigation with history on demand, alerts (store, lines, toasts), session shading and market status, bar-close countdown), the hook for Deephaven charts, and the annotation store. One ES module for bundlers, with types | [dh-charts](https://github.com/taymarti/dh-charts) `ext/` (`npm pack`, which builds `dist/`) |
-| `acme-chart-react-0.3.0.tgz` | `@acme/chart-react`: React components for trading charts: `ChartToolbar` (symbol search, interval, chart type, indicators dialog, range, scale, layouts and sync, watchlist toggle), `ChartLegend` (study rows and settings, market status), `Watchlist`, `AlertsPanel`. Peer dependencies: react 18 or 19, lightweight-charts 5 (types) | [dh-charts](https://github.com/taymarti/dh-charts) `react/` (`npm pack`) |
+| `acme-chart-ext-0.4.0.tgz` | `@acme/chart-ext`, the chart component: our Lightweight Charts plugins (price lines, drawings with context menu, shortcuts and undo, OHLC legend, shading, crosshair and time sync groups, chart navigation with history on demand, alert lines and toasts, session shading and market status, bar-close countdown), `SeriesFeed` and `bindFeed` (any data source as price and studies in panes, compare overlays), time-zone and tick-size formats, the store interfaces, and the hook for Deephaven charts. No Deephaven dependency (since 0.4.0: the table stores and `subscribeRows` moved to `@acme/dh-bindings`). One ES module for bundlers, with types | [dh-charts](https://github.com/taymarti/dh-charts) `ext/` (`npm pack`, which builds `dist/`) |
+| `acme-dh-bindings-0.1.0.tgz` | `@acme/dh-bindings`: the chart component's interfaces over Deephaven (annotation and alert stores over input tables, `subscribeRows`, `tableFeed`), the request API client (`openApi`, `ApiClient`) and `requestChart`. Peer dependencies: `@acme/chart-ext` 0.4, `@deephaven/jsapi-types` (types), lightweight-charts 5.2.0 | [dh-charts](https://github.com/taymarti/dh-charts) `bindings/` (`npm pack`, after `ext/` is built) |
+| `acme-chart-react-0.4.0.tgz` | `@acme/chart-react`: React components for trading charts: `ChartToolbar` (symbol search, interval, chart type, indicators dialog, compare, range, scale, layouts and sync, panels), `ChartLegend` (study rows and settings, market status), `Watchlist`, `AlertsPanel`, and the link bus (`createLinkBus`, `LinkProvider`, `useLink`). Peer dependencies: react 18 or 19, lightweight-charts 5 (types) | [dh-charts](https://github.com/taymarti/dh-charts) `react/` (`npm pack`) |
 | `deephaven-js-plugin-tradingview-lightweight-0.1.0-acme.1.tgz` | Deephaven's TradingView plugin JS with our two changes (chart-events API, time-zone cache) | [our fork](https://github.com/taymarti/deephaven-plugins/tree/acme/tradingview-lightweight), commit `e0cdfdd`, `plugins/tradingview-lightweight/src/js` |
 
 ```powershell
 .\prime-cache.ps1                                            # their Lightweight Charts dependencies
-npm install <path to lwc-vendor>/acme/acme-chart-ext-0.3.0.tgz lightweight-charts@5.2.0
+npm install <path to lwc-vendor>/acme/acme-chart-ext-0.4.0.tgz <path to lwc-vendor>/acme/acme-dh-bindings-0.1.0.tgz lightweight-charts@5.2.0
 ```
 
 npm records the dependency as `file:<path>`, so keep `lwc-vendor` at the same relative place for
-everyone (for example next to the project). Checked: a project with `@acme/chart-ext` from the tarball
+everyone (for example next to the project). Checked (0.3.0): a project with `@acme/chart-ext` from the tarball
 and a lockfile installed with `npm ci` with the registry unreachable and only this repo's cache prime;
-the module imported with all its exports.
+the module imported with all its exports. Checked (0.4.0, with dh-bindings 0.1.0 and chart-react 0.4.0): installed together in a clean project and imported with all their exports.
 
 The fork's plugin also needs the `@deephaven/*` packages and `react-redux` from your mirror. Most
 apps don't install it from npm at all: the Deephaven server serves the plugin to the browser from its
 Python wheel (built from the same fork commit).
 
-To refresh: `npm pack --pack-destination <lwc-vendor>/acme` in each source folder (in dh-charts
-`ext/`, it builds first), then regenerate `acme/INTEGRITY`.
+To refresh: `npm pack --pack-destination <lwc-vendor>/acme` in each source folder, `ext/` first (it builds
+first, and `bindings/` reads its types), then regenerate `acme/INTEGRITY`.
 
 ## License
 
