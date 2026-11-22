@@ -1,7 +1,8 @@
 # taymarti/python-packages
 
-Python wheels we build, for environments that can't build them. Every version stays: a release adds a
-wheel, never replaces one. `INTEGRITY` has their SHA-256 hashes (pip's `--hash=sha256:...` form).
+Python wheels we build, for environments that can't build them: the latest version of each (a release
+replaces the previous wheel; older ones are in git history). `INTEGRITY` has their SHA-256 hashes
+(pip's `--hash=sha256:...` form).
 
 | Wheel | What it is | Built from |
 |---|---|---|
