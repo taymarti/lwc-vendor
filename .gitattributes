@@ -1,5 +1,5 @@
 *.tgz binary
-# third-party files, kept byte-identical to what npm published
-node_modules/** -text
-packages/** -text
+*.whl binary
+# third-party files, kept byte-identical to what their registries published
+vendor/** -text
 *.sh text eol=lf

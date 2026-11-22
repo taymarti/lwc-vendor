@@ -4,7 +4,7 @@
 # Run once per machine (and again after npm's cache is cleared). Usage: ./prime-cache.sh
 set -e
 here=$(cd "$(dirname "$0")" && pwd)
-for t in "$here"/packages/*.tgz; do
+for t in "$here"/vendor/node-packages/*.tgz; do
   npm cache add "$t"
   echo "cached $(basename "$t")"
 done
