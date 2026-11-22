@@ -9,7 +9,7 @@ vendor/                      third-party packages, byte-identical to what their 
   python-packages/             wheels and sdists (none needed yet)
 taymarti/                    packages we build (dh-charts, our fork of Deephaven's plugin)
   node-packages/               npm tarballs + INTEGRITY, every released version
-  python-packages/             wheels (none published yet)
+  python-packages/             wheels + INTEGRITY, every released version
 ```
 
 Every version stays: a release adds a tarball, it never replaces one, so a project pinned to an older
@@ -96,7 +96,9 @@ to `taymarti/node-packages/INTEGRITY`. Never repack over an existing version: a 
 
 ## Our Python packages (`taymarti/python-packages/`)
 
-None published yet; its README lists the candidates.
+Wheels of `dh-chart-ext` 0.1.0 (dh-charts' server side) and of the fork's `deephaven-plugin-tradingview-lightweight`
+0.1.0+acme.1, with their SHA-256 hashes; its README says how to install them together (name the fork's version
+explicitly, or a newer upstream release on your mirror wins).
 
 ## License
 
