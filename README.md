@@ -25,10 +25,24 @@ keep ordinary registry dependencies; nothing in them changes.
 | `lightweight-charts` | 5.2.0 | Apache-2.0 |
 | `fancy-canvas` (its dependency) | 2.1.0 | MIT (stated in its package.json; the package ships no LICENSE file) |
 | `@tradingview/lwc-plugin-user-price-lines` | 1.0.0 | Apache-2.0 |
+| `@deephaven/app-utils` | 1.34.2 | Apache-2.0 |
+| `@deephaven/auth-plugins` | 1.34.0 | Apache-2.0 |
+| `@deephaven/chart` | 1.34.0 | Apache-2.0 |
+| `@deephaven/console` | 1.34.0 | Apache-2.0 |
+| `@deephaven/dashboard` | 1.34.0 | Apache-2.0 |
+| `@deephaven/dashboard-core-plugins` | 1.34.2 | Apache-2.0 |
+| `@deephaven/file-explorer` | 1.34.0 | Apache-2.0 |
+| `@deephaven/golden-layout` | 1.34.0 | Apache-2.0 |
+| `@deephaven/grid` | 1.34.1 | Apache-2.0 |
+| `@deephaven/iris-grid` | 1.34.2 | Apache-2.0 |
+| `@deephaven/jsapi-components` | 1.34.0 | Apache-2.0 |
+| `@deephaven/jsapi-utils` | 1.34.0 | Apache-2.0 |
+| `@deephaven/plugin` | 1.34.2 | Apache-2.0 |
+| `@deephaven/react-hooks` | 1.34.0 | Apache-2.0 |
 
 The tarballs in `vendor/node-packages/` are the ones published to npm, unmodified: their SHA-512 hashes
 (`vendor/node-packages/INTEGRITY`) equal the `integrity` the npm registry publishes for each version.
-`vendor/node-packages/installed/node_modules/` is the same packages installed, for use without npm. The Apache-2.0 packages carry their LICENSE (and NOTICE).
+`vendor/node-packages/installed/node_modules/` is the Lightweight Charts packages installed, for use without npm (the `@deephaven/*` packages are tarballs only: installed, they would pull in hundreds of dependencies). The Apache-2.0 packages carry their LICENSE (and NOTICE).
 
 ### Use them (once per machine)
 
@@ -38,7 +52,7 @@ git clone https://github.com/taymarti/lwc-vendor.git
 ```
 
 Then install projects as usual (`npm ci`). npm looks packages up in its cache by the lockfile's
-`integrity` before fetching, so these three come from the cache and never touch the registry; every
+`integrity` before fetching, so these come from the cache and never touch the registry; every
 other package still comes from your mirror. Checked with the registry unreachable and a cache primed
 only from these tarballs: a lockfile resolving all three to registry.npmjs.org installed in full,
 with plain `npm ci` and with `npm ci --offline`.

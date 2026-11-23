@@ -1,3 +1,17 @@
+sha512-YO2+7OZIuAYVfmLIPcGdcZ34qh2hhm4mLy9Dx4FpTV/zzXVXcIONYj87wJ8tg22eO4/G/46lrnRsrJyUIh00TQ==  deephaven-app-utils-1.34.2.tgz
+sha512-qUEcXV9MfQI93jfSUzQOHG79YW27L5YXSQLFOJDsg9bBgZC2blp1bIGRApYhqc+bEdKqgSdZ9ArWPh1dw6owPA==  deephaven-auth-plugins-1.34.0.tgz
+sha512-9lJJK2+hRQGYqFDgkKGgL5UNWWPRDaj3Tv1FzSzzkNplts43sR0huNFgCQ6oBX1C6dDKGZLt4jNdbO7WBLgkdQ==  deephaven-chart-1.34.0.tgz
+sha512-h9N7pasEj06v6vovoyIBGHlsBvG4gEGNIQzY2YPHwGcX+6/97fkCqzj/++8CbBT2FEnQF5TnValfSA61b39DBg==  deephaven-console-1.34.0.tgz
+sha512-65UIgsH1QGvCsAQ7owAfQlaGA0RIwqS+WrUzoo+lRb1azgBp1UjZQtCKlCTk5tKgTujRX68j9Jk3zw3yPjoPPw==  deephaven-dashboard-1.34.0.tgz
+sha512-6MsGfdwWrUEEWGNtU2/R/JlWvSnQyvAtGePAnm1z65/aFMu2ubfatTGKtIU8ldPQLrwM1n6MfQBcTkGH9ApyIQ==  deephaven-dashboard-core-plugins-1.34.2.tgz
+sha512-gX0l6GTFaK78aY4wr+ywPcdE9qAR+n2fuJOCj/WuPpYdWfb+zFeK/Autz5r8JmyU7NJBxFKP2avkhrpANC/m4Q==  deephaven-file-explorer-1.34.0.tgz
+sha512-FT3NgrVkuJnMsQKWXN5j55+KWwxnkVCV9D8A6Yb7ahI7IAJmTzbviGXG15WWYXKa3FWRxJFWmPIhdq/LP4tAkw==  deephaven-golden-layout-1.34.0.tgz
+sha512-FPHPy7hgRXxEgqmYb4tzquwoqArqA7QXW1OJY9AI+f0LtUKf1UsfpYtuIXSeAtj7xH4rweds8dtDVCHZwpsHBQ==  deephaven-grid-1.34.1.tgz
+sha512-xLw5z6RU/1Jj+a1bgzW3bdkERuA5zAZCPWx1pHtf4ruOA5dZOoScqE6jjhDoG/5Mau6hcWZDXZ8SLs8pJiUpEQ==  deephaven-iris-grid-1.34.2.tgz
+sha512-AGNUVjmGA6DMvoZVzzbTTNJqqVBxj1X7iABY8piEncO0lAh+4HPD9GH+weBnr7/oq8tguxZljUosMhF8jFu4zA==  deephaven-jsapi-components-1.34.0.tgz
+sha512-OPAduY1yWj3LKK1uHdIW4s03cVE5pvAMexJ+JOnp/tbVHCin+Wbkn2rOmgdtUfdPb1lExnc0kjVBVDsm8LYW4w==  deephaven-jsapi-utils-1.34.0.tgz
+sha512-wrbzhBvIoRWMuScEYWTX0r3NeIe6yXB1amwnzpZCV81PXc/VaQUkUBaXHGrv+uQbYwnPagpZ4QHApxpuPITkQA==  deephaven-plugin-1.34.2.tgz
+sha512-txGIJMLK7SlKyqIpDTh7D0J3/KcnMC55MwziF8eEOiPAP46738HO7XTNy5AO5a3mnRYzrOdQUSmfcZNQ5lbX1Q==  deephaven-react-hooks-1.34.0.tgz
 sha512-nifxXJ95JNLFR2NgRV4/MxVP45G9909wJTEKz5fg/TZS20JJZA6hfgRVh/bC9bwl2zBtBNcYPjiBE4njQHVBwQ==  fancy-canvas-2.1.0.tgz
 sha512-ey3Vas8UhV06ni+LT9TA1nEe4y8So4Mi6CL/oarNHFMyTktz/xy8e8+oh04Q//eO3t6etvFXgayz2fClyFQb5w==  lightweight-charts-5.2.0.tgz
 sha512-bVGIslUYG/0gkuXUo3rqxu5jBdFGPTV+BL3xH9lAxBIDVm4TVlFUj2dCAlLrkIgy4Rq8nkORuPSkIV6ifa5GCQ==  tradingview-lwc-plugin-user-price-lines-1.0.0.tgz
