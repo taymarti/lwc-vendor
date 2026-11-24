@@ -25,6 +25,7 @@ keep ordinary registry dependencies; nothing in them changes.
 | `lightweight-charts` | 5.2.0 | Apache-2.0 |
 | `fancy-canvas` (its dependency) | 2.1.0 | MIT (stated in its package.json; the package ships no LICENSE file) |
 | `@tradingview/lwc-plugin-user-price-lines` | 1.0.0 | Apache-2.0 |
+| `@tradingview/lwc-toolkit` | 1.1.0 | Apache-2.0 (peer: lightweight-charts ^5.0.0) |
 | `@deephaven/app-utils` | 1.34.2 | Apache-2.0 |
 | `@deephaven/auth-plugins` | 1.34.0 | Apache-2.0 |
 | `@deephaven/chart` | 1.34.0 | Apache-2.0 |
